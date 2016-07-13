@@ -13,6 +13,18 @@
 		660C66161D35BEC100BAD5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660C66151D35BEC100BAD5EE /* Assets.xcassets */; };
 		660C66191D35BEC100BAD5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */; };
 		660C66241D35BEC100BAD5EE /* MorseNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66231D35BEC100BAD5EE /* MorseNewTests.swift */; };
+		660C662F1D35BEE300BAD5EE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C662E1D35BEE300BAD5EE /* Model.swift */; };
+		660C66301D35BF1400BAD5EE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C662E1D35BEE300BAD5EE /* Model.swift */; };
+		660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */; };
+		660C66331D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */; };
+		660C66351D35C01900BAD5EE /* morse.json in Resources */ = {isa = PBXBuildFile; fileRef = 660C66341D35C01900BAD5EE /* morse.json */; };
+		660C66361D35C01900BAD5EE /* morse.json in Resources */ = {isa = PBXBuildFile; fileRef = 660C66341D35C01900BAD5EE /* morse.json */; };
+		660C66381D35C02900BAD5EE /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66371D35C02900BAD5EE /* DataLoader.swift */; };
+		660C66391D35C02900BAD5EE /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66371D35C02900BAD5EE /* DataLoader.swift */; };
+		660C663B1D35C71200BAD5EE /* WordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C663A1D35C71200BAD5EE /* WordEncoder.swift */; };
+		660C663C1D35C71200BAD5EE /* WordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C663A1D35C71200BAD5EE /* WordEncoder.swift */; };
+		660C663E1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */; };
+		660C663F1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,12 @@
 		660C661F1D35BEC100BAD5EE /* MorseNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		660C66231D35BEC100BAD5EE /* MorseNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseNewTests.swift; sourceTree = "<group>"; };
 		660C66251D35BEC100BAD5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		660C662E1D35BEE300BAD5EE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolEncoder.swift; sourceTree = "<group>"; };
+		660C66341D35C01900BAD5EE /* morse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morse.json; sourceTree = "<group>"; };
+		660C66371D35C02900BAD5EE /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		660C663A1D35C71200BAD5EE /* WordEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEncoder.swift; sourceTree = "<group>"; };
+		660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,12 @@
 				660C66151D35BEC100BAD5EE /* Assets.xcassets */,
 				660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */,
 				660C661A1D35BEC100BAD5EE /* Info.plist */,
+				660C66341D35C01900BAD5EE /* morse.json */,
+				660C662E1D35BEE300BAD5EE /* Model.swift */,
+				660C663A1D35C71200BAD5EE /* WordEncoder.swift */,
+				660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */,
+				660C66371D35C02900BAD5EE /* DataLoader.swift */,
+				660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */,
 			);
 			path = MorseNew;
 			sourceTree = "<group>";
@@ -177,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660C66351D35C01900BAD5EE /* morse.json in Resources */,
 				660C66191D35BEC100BAD5EE /* LaunchScreen.storyboard in Resources */,
 				660C66161D35BEC100BAD5EE /* Assets.xcassets in Resources */,
 				660C66141D35BEC100BAD5EE /* Main.storyboard in Resources */,
@@ -187,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660C66361D35C01900BAD5EE /* morse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660C66381D35C02900BAD5EE /* DataLoader.swift in Sources */,
+				660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
+				660C662F1D35BEE300BAD5EE /* Model.swift in Sources */,
 				660C66111D35BEC100BAD5EE /* ViewController.swift in Sources */,
+				660C663B1D35C71200BAD5EE /* WordEncoder.swift in Sources */,
 				660C660F1D35BEC100BAD5EE /* AppDelegate.swift in Sources */,
+				660C663E1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660C66391D35C02900BAD5EE /* DataLoader.swift in Sources */,
+				660C66331D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
 				660C66241D35BEC100BAD5EE /* MorseNewTests.swift in Sources */,
+				660C663F1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */,
+				660C663C1D35C71200BAD5EE /* WordEncoder.swift in Sources */,
+				660C66301D35BF1400BAD5EE /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
