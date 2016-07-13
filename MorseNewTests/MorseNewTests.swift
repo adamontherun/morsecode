@@ -12,8 +12,10 @@ import XCTest
 class MorseNewTests: XCTestCase {
     
     func testEncodeE() {
-        let symbol = SymbolEncoder.encode(character: "e")
-        print(symbol)
+        let result = SymbolEncoder.encode(character: "e")
+        let mark = Mark.Dot
+        let actual = Symbol(marks: [mark])
+        XCTAssertEqual(result!, actual)
     }
     
     func testEncodeEE() {

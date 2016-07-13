@@ -8,6 +8,10 @@
 
 import Foundation
 
-struct Symbol {
+struct Symbol: Equatable {
     let marks: [Mark]
+}
+
+func ==(lhs: Symbol, rhs: Symbol) -> Bool {
+    return lhs.marks == rhs.marks
 }
