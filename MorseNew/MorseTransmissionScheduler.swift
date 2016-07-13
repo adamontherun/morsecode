@@ -1,5 +1,5 @@
 //
-//  Symbol.swift
+//  MorseTransmissionScheduler.swift
 //  MorseNew
 //
 //  Created by adam smith on 7/13/16.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Symbol {
-    let marks: [Mark]
+class MorseTransmissionScheduler {
+    
 }

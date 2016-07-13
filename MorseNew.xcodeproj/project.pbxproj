@@ -31,6 +31,9 @@
 		66A1564C1D36F058000956F2 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1564A1D36F058000956F2 /* Word.swift */; };
 		66A1564E1D36F05F000956F2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1564D1D36F05F000956F2 /* Message.swift */; };
 		66A1564F1D36F05F000956F2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1564D1D36F05F000956F2 /* Message.swift */; };
+		66A156511D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */; };
+		66A156521D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */; };
+		66A156541D36F505000956F2 /* MorseTransmissionSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 		66A156471D36F053000956F2 /* Symbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		66A1564A1D36F058000956F2 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		66A1564D1D36F05F000956F2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTransmissionScheduler.swift; sourceTree = "<group>"; };
+		66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTransmissionSchedulerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 				66A156471D36F053000956F2 /* Symbol.swift */,
 				66A1564A1D36F058000956F2 /* Word.swift */,
 				66A1564D1D36F05F000956F2 /* Message.swift */,
+				66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */,
 			);
 			path = MorseNew;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			children = (
 				660C66231D35BEC100BAD5EE /* MorseNewTests.swift */,
 				660C66251D35BEC100BAD5EE /* Info.plist */,
+				66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */,
 			);
 			path = MorseNewTests;
 			sourceTree = "<group>";
@@ -236,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A156451D36F04C000956F2 /* Mark.swift in Sources */,
+				66A156511D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */,
 				660C66381D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
 				660C66111D35BEC100BAD5EE /* ViewController.swift in Sources */,
@@ -252,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A156521D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */,
+				66A156541D36F505000956F2 /* MorseTransmissionSchedulerTests.swift in Sources */,
 				660C66391D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66331D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
 				66A1564C1D36F058000956F2 /* Word.swift in Sources */,
