@@ -12,8 +12,12 @@ class MessageEncoder {
     
     static func encode(message message: String) -> Message? {
         let words = message.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-
-        let encodedWords = words.map{ WordEncoder.encode(word: $0)! }
-        return Message(words: encodedWords)
+        
+        var morseEncodedWords = [Word]()
+        for word in words {
+            guard let morseEncodedWord = WordEncoder.encode(word: word) else { return nil }
+            morseEncodedWords.append(morseEncodedWord)
+        }
+        return Message(words: morseEncodedWords)
     }
 }
