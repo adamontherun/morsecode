@@ -10,7 +10,7 @@ import XCTest
 
 class WordEncoderTests: XCTestCase {
 
-    func testEncodeEE() {
+    func testEncodeEE_returnsCorrectWord() {
         
         let result = WordEncoder.encode(word: "ee")
         

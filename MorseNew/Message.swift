@@ -8,6 +8,10 @@
 
 import Foundation
 
-struct Message {
+struct Message: Equatable {
     let words: [Word]
+}
+
+func ==(lhs: Message, rhs: Message) -> Bool {
+    return lhs.words == rhs.words
 }

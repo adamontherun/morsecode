@@ -10,9 +10,17 @@ import XCTest
 
 class MessageEncoderTests: XCTestCase {
 
-    func testEncodeESpaceE() {
-        let message = MessageEncoder.encode(message: "e e")
-        print(message)
+    func testEncodeESpaceE_returnsCorrectPhrase() {
+        
+        let result = MessageEncoder.encode(message: "e e")!
+        
+        let e = Symbol(marks: [Mark.Dot])
+        let firstWord = Word(symbols: [e])
+        let secondWord = Word(symbols: [e])
+
+        let actual = Message(words: [firstWord, secondWord])
+        
+        XCTAssertEqual(result, actual)
     }
 
 }
