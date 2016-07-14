@@ -11,7 +11,12 @@ import XCTest
 class WordEncoderTests: XCTestCase {
 
     func testEncodeEE() {
-        let word = WordEncoder.encode(word: "ee")
-        print(word)
+        
+        let result = WordEncoder.encode(word: "ee")
+        
+        let e = Symbol(marks: [Mark.Dot])
+        let actual = Word(symbols: [e,e])
+        
+        XCTAssertEqual(result!, actual)
     }
 }

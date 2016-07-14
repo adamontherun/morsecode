@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct Word {
+struct Word: Equatable {
     
     let symbols: [Symbol]
+}
+
+func ==(lhs: Word, rhs: Word) -> Bool {
+    return lhs.symbols == rhs.symbols
 }
