@@ -12,7 +12,6 @@
 		660C66141D35BEC100BAD5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C66121D35BEC100BAD5EE /* Main.storyboard */; };
 		660C66161D35BEC100BAD5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660C66151D35BEC100BAD5EE /* Assets.xcassets */; };
 		660C66191D35BEC100BAD5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */; };
-		660C66241D35BEC100BAD5EE /* MorseNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66231D35BEC100BAD5EE /* MorseNewTests.swift */; };
 		660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */; };
 		660C66331D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */; };
 		660C66351D35C01900BAD5EE /* morse.json in Resources */ = {isa = PBXBuildFile; fileRef = 660C66341D35C01900BAD5EE /* morse.json */; };
@@ -34,6 +33,9 @@
 		66A156511D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */; };
 		66A156521D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */; };
 		66A156541D36F505000956F2 /* MorseTransmissionSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */; };
+		66A156561D381E0B000956F2 /* SymbolEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */; };
+		66A156581D381E44000956F2 /* WordEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156571D381E44000956F2 /* WordEncoderTests.swift */; };
+		66A1565A1D381E66000956F2 /* MessageEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156591D381E66000956F2 /* MessageEncoderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,6 @@
 		660C66181D35BEC100BAD5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		660C661A1D35BEC100BAD5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		660C661F1D35BEC100BAD5EE /* MorseNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		660C66231D35BEC100BAD5EE /* MorseNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseNewTests.swift; sourceTree = "<group>"; };
 		660C66251D35BEC100BAD5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolEncoder.swift; sourceTree = "<group>"; };
 		660C66341D35C01900BAD5EE /* morse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morse.json; sourceTree = "<group>"; };
@@ -68,6 +69,9 @@
 		66A1564D1D36F05F000956F2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTransmissionScheduler.swift; sourceTree = "<group>"; };
 		66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTransmissionSchedulerTests.swift; sourceTree = "<group>"; };
+		66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolEncoderTests.swift; sourceTree = "<group>"; };
+		66A156571D381E44000956F2 /* WordEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEncoderTests.swift; sourceTree = "<group>"; };
+		66A156591D381E66000956F2 /* MessageEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEncoderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +136,11 @@
 		660C66221D35BEC100BAD5EE /* MorseNewTests */ = {
 			isa = PBXGroup;
 			children = (
-				660C66231D35BEC100BAD5EE /* MorseNewTests.swift */,
 				660C66251D35BEC100BAD5EE /* Info.plist */,
 				66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */,
+				66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */,
+				66A156571D381E44000956F2 /* WordEncoderTests.swift */,
+				66A156591D381E66000956F2 /* MessageEncoderTests.swift */,
 			);
 			path = MorseNewTests;
 			sourceTree = "<group>";
@@ -264,10 +270,12 @@
 				66A156541D36F505000956F2 /* MorseTransmissionSchedulerTests.swift in Sources */,
 				660C66391D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66331D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
+				66A156561D381E0B000956F2 /* SymbolEncoderTests.swift in Sources */,
 				66A1564C1D36F058000956F2 /* Word.swift in Sources */,
-				660C66241D35BEC100BAD5EE /* MorseNewTests.swift in Sources */,
 				66A156461D36F04C000956F2 /* Mark.swift in Sources */,
+				66A156581D381E44000956F2 /* WordEncoderTests.swift in Sources */,
 				660C663F1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */,
+				66A1565A1D381E66000956F2 /* MessageEncoderTests.swift in Sources */,
 				66A156491D36F053000956F2 /* Symbol.swift in Sources */,
 				66A1564F1D36F05F000956F2 /* Message.swift in Sources */,
 				660C663C1D35C71200BAD5EE /* WordEncoder.swift in Sources */,
