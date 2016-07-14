@@ -8,7 +8,17 @@
 
 import Foundation
 
-enum Mark {
+enum Mark: CustomDebugStringConvertible {
     case Dot
     case Dash
+    
+    var debugDescription: String {
+        switch self {
+            
+        case .Dot:
+            return "Dot"
+        case .Dash:
+            return "Dash"
+        }
+    }
 }

@@ -17,7 +17,14 @@ class MorseTransmissionSchedulerTests: XCTestCase {
         let result = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)!
         
         XCTAssertEqual(actual, result)
-        
     }
-
+    
+    func testMessageIsT_returnsOnDash() {
+        let actual = [Signal.On(DashValue)]
+        
+        let message = MessageEncoder.encode(message: "t")!
+        let result = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)!
+        
+        XCTAssertEqual(actual, result)
+    }
 }
