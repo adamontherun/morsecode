@@ -10,5 +10,14 @@ import XCTest
 
 class MorseTransmissionSchedulerTests: XCTestCase {
 
+    func testMessageIsE_returnsOnDot() {
+        let actual = [Signal.On(DotValue)]
+        
+        let message = MessageEncoder.encode(message: "e")!
+        let result = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)!
+        
+        XCTAssertEqual(actual, result)
+        
+    }
 
 }

@@ -10,4 +10,7 @@ import Foundation
 
 class MorseTransmissionScheduler {
     
+   static func scheduleTransmission(fromMessage message: Message) -> [Signal]? {
+        return [Signal.On(DotValue)]
+    }
 }

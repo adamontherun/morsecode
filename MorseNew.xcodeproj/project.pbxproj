@@ -36,6 +36,8 @@
 		66A156561D381E0B000956F2 /* SymbolEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */; };
 		66A156581D381E44000956F2 /* WordEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156571D381E44000956F2 /* WordEncoderTests.swift */; };
 		66A1565A1D381E66000956F2 /* MessageEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156591D381E66000956F2 /* MessageEncoderTests.swift */; };
+		66A1565C1D382285000956F2 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1565B1D382285000956F2 /* Signal.swift */; };
+		66A1565D1D382285000956F2 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1565B1D382285000956F2 /* Signal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,7 @@
 		66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolEncoderTests.swift; sourceTree = "<group>"; };
 		66A156571D381E44000956F2 /* WordEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEncoderTests.swift; sourceTree = "<group>"; };
 		66A156591D381E66000956F2 /* MessageEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEncoderTests.swift; sourceTree = "<group>"; };
+		66A1565B1D382285000956F2 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 				660C66371D35C02900BAD5EE /* DataLoader.swift */,
 				660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */,
 				66A156441D36F04C000956F2 /* Mark.swift */,
+				66A1565B1D382285000956F2 /* Signal.swift */,
 				66A156471D36F053000956F2 /* Symbol.swift */,
 				66A1564A1D36F058000956F2 /* Word.swift */,
 				66A1564D1D36F05F000956F2 /* Message.swift */,
@@ -249,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A156451D36F04C000956F2 /* Mark.swift in Sources */,
+				66A1565C1D382285000956F2 /* Signal.swift in Sources */,
 				66A156511D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */,
 				660C66381D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A156521D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */,
+				66A1565D1D382285000956F2 /* Signal.swift in Sources */,
 				66A156541D36F505000956F2 /* MorseTransmissionSchedulerTests.swift in Sources */,
 				660C66391D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66331D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
