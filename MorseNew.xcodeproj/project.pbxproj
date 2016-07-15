@@ -43,6 +43,7 @@
 		66F7DFA11D387324004B36E5 /* FlashingLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA01D387324004B36E5 /* FlashingLightViewController.swift */; };
 		66F7DFA31D397763004B36E5 /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA21D397763004B36E5 /* BeepingViewController.swift */; };
 		66F7DFA51D397797004B36E5 /* MorsePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */; };
+		66F7DFA71D39A37E004B36E5 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66F7DFA61D39A37E004B36E5 /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		66F7DFA01D387324004B36E5 /* FlashingLightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashingLightViewController.swift; sourceTree = "<group>"; };
 		66F7DFA21D397763004B36E5 /* BeepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeepingViewController.swift; sourceTree = "<group>"; };
 		66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorsePlayerViewController.swift; sourceTree = "<group>"; };
+		66F7DFA61D39A37E004B36E5 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +155,9 @@
 		66F7DF941D386BD4004B36E5 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				66F7DFA61D39A37E004B36E5 /* beep.mp3 */,
 				660C66371D35C02900BAD5EE /* DataLoader.swift */,
 				660C660E1D35BEC100BAD5EE /* AppDelegate.swift */,
-				660C66151D35BEC100BAD5EE /* Assets.xcassets */,
 				660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */,
 				660C661A1D35BEC100BAD5EE /* Info.plist */,
 			);
@@ -165,6 +167,7 @@
 		66F7DF951D386BE0004B36E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				660C66151D35BEC100BAD5EE /* Assets.xcassets */,
 				660C66101D35BEC100BAD5EE /* MessageEntryViewController.swift */,
 				660C66121D35BEC100BAD5EE /* Main.storyboard */,
 				66F7DFA01D387324004B36E5 /* FlashingLightViewController.swift */,
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				660C66351D35C01900BAD5EE /* morse.json in Resources */,
+				66F7DFA71D39A37E004B36E5 /* beep.mp3 in Resources */,
 				660C66191D35BEC100BAD5EE /* LaunchScreen.storyboard in Resources */,
 				660C66161D35BEC100BAD5EE /* Assets.xcassets in Resources */,
 				660C66141D35BEC100BAD5EE /* Main.storyboard in Resources */,

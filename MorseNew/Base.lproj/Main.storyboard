@@ -50,8 +50,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="soundOrLightSwitch" destination="p6p-rb-m3E" id="aKW-Cz-Nhd"/>
                         <outlet property="textToEncode" destination="6NC-Ct-L6R" id="IDl-hz-zwy"/>
                         <segue destination="pd3-J8-NaI" kind="presentation" identifier="segueToFlashingLightViewController" modalPresentationStyle="formSheet" id="gcz-ps-TVx"/>
+                        <segue destination="1Nx-By-5aM" kind="presentation" identifier="segueToBeepingViewController" modalPresentationStyle="formSheet" id="gC6-zS-mgy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1919" y="313"/>
         </scene>
-        <!--View Controller-->
+        <!--Beeping View Controller-->
         <scene sceneID="UzJ-k3-xxV">
             <objects>
-                <viewController id="1Nx-By-5aM" sceneMemberID="viewController">
+                <viewController id="1Nx-By-5aM" customClass="BeepingViewController" customModule="MorseNew" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2vu-Sp-wPy"/>
                         <viewControllerLayoutGuide type="bottom" id="TGV-tD-n67"/>
@@ -111,12 +113,23 @@
                     <view key="view" contentMode="scaleToFill" id="kBs-Jw-6YM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signal" translatesAutoresizingMaskIntoConstraints="NO" id="s64-9Y-lne">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64688215313112918" green="1" blue="0.6391169749043204" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="signalImage" destination="s64-9Y-lne" id="eko-Re-lH1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bh-xn-TdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1903" y="1013"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="signal" width="101" height="100"/>
+    </resources>
 </document>

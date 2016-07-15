@@ -10,22 +10,56 @@ import UIKit
 
 class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDelegateProtocol {
     
-    let segueToFlashingLightViewController = "segueToFlashingLightViewController"
-    let flashingLightViewControllerID      = "flashingLightViewControllerID"
+    enum SegueIdentifier: String {
+        case segueToFlashingLightViewController
+        case segueToBeepingViewController
+    }
     
     @IBOutlet weak var textToEncode: UITextField!
+    @IBOutlet weak var soundOrLightSwitch: UISwitch!
     
     
     // MARK: - View Controller Lifecycle Methods
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == segueToFlashingLightViewController {
+        if segue.identifier == SegueIdentifier.segueToFlashingLightViewController.rawValue ||
+        segue.identifier == SegueIdentifier.segueToBeepingViewController.rawValue
+        {
             
-            guard let destinationViewController = segue.destinationViewController as? FlashingLightViewController else { return }
+            guard let destinationViewController = segue.destinationViewController as? MorsePlayerViewController else { return }
             destinationViewController.signals = createSignals()
             destinationViewController.delegate = self
         }
+    }
+    
+    
+    // Mark: - Action Methods
+    
+    
+    @IBAction func handleTransmitButtonTapped(sender: UIButton) {
+        
+        let segueIdentifier = determineSegueIdentifier()
+        
+        performSegueWithIdentifier(segueIdentifier, sender: sender)
+    }
+    
+    
+    // Mark: - MorsePlayerViewControllerDelegateProtocol Methods
+    
+    
+    func closeModal() {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    // MARK: - Helper Methods
+
+    
+    private func determineSegueIdentifier() -> String {
+        
+        return soundOrLightSwitch.on ? SegueIdentifier.segueToFlashingLightViewController.rawValue : SegueIdentifier.segueToBeepingViewController.rawValue
     }
     
     private func createSignals() -> [Signal]? {
@@ -35,12 +69,4 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
         return MorseTransmissionScheduler.scheduleTransmission(fromMessage: encodedMessage)
     }
     
-    func closeModal() {
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    @IBAction func handleTransmitButtonTapped(sender: UIButton) {
-        performSegueWithIdentifier(segueToFlashingLightViewController, sender: sender)
-    }
-    
-  }
+}

@@ -34,4 +34,5 @@ class MorsePlayerViewController: UIViewController, MorseCodePlayerDelegateProtoc
     {
         delegate?.closeModal()
     }
+    
 }
