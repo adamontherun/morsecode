@@ -8,14 +8,9 @@
 
 import Foundation
 
-struct Symbol: Equatable, CustomDebugStringConvertible {
-    let marks: [Mark]
+struct Symbol: Equatable {
     
-    var debugDescription: String {
-        return self.marks.reduce("Symbol with marks: "){ text, mark in
-            "\(text), \(mark)"
-        }
-    }
+    let marks: [Mark]
 }
 
 func ==(lhs: Symbol, rhs: Symbol) -> Bool {

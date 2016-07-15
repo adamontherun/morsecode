@@ -8,15 +8,9 @@
 
 import Foundation
 
-struct Word: Equatable, CustomDebugStringConvertible {
+struct Word: Equatable {
     
     let symbols: [Symbol]
-    
-    var debugDescription: String {
-        return self.symbols.reduce("Word with symbols: "){ text, symbol in
-            "\(text), \(symbol)"
-        }
-    }
 }
 
 func ==(lhs: Word, rhs: Word) -> Bool {
