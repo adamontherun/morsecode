@@ -45,5 +45,14 @@ class MorseTransmissionSchedulerTests: XCTestCase {
         
         XCTAssertEqual(actual, result)
     }
+    
+    func testMessageIsISpaceI_returnsCorrectValue() {
+        let actual = [Signal.On(DotValue), Signal.Off(InterSignalPauseDuration), Signal.On(DotValue), Signal.Off(InterWordPauseDuration), Signal.On(DotValue), Signal.Off(InterSignalPauseDuration), Signal.On(DotValue)]
+        
+        let message = MessageEncoder.encode(message: "i i")!
+        let result = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)
+        
+        XCTAssertEqual(actual, result)
+    }
 
 }
