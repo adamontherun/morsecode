@@ -9,6 +9,7 @@
 import Foundation
 
 enum Mark {
+    
     case Dot
     case Dash
 }

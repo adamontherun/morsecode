@@ -1,0 +1,47 @@
+//
+//  SignalPlayer.swift
+//  MorseCode
+//
+//  Created by adam smith on 7/7/16.
+//  Copyright © 2016 adamontherun. All rights reserved.
+//
+
+import Foundation
+
+
+class SignalPlayer: NSObject {
+    
+    var signalsQueue: [Signal]
+    var basePlaybackRate = 0.092
+    weak var delegate:MorseCodePlayerDelegateProtocol?
+    
+    init(signals: [Signal], delegate: MorseCodePlayerDelegateProtocol) {
+        
+        self.delegate = delegate
+        signalsQueue = signals
+    }
+    
+    func play() {
+        
+        startTimer(forSignal: signalsQueue.first!)
+    }
+    
+    private func startTimer(forSignal signal: Signal) {
+        
+        let playbackRate = signal.duration(forBasePlaybackRate: basePlaybackRate)
+        NSTimer.scheduledTimerWithTimeInterval(playbackRate, target: self, selector: #selector(updateDelegate), userInfo: nil, repeats: false)
+    }
+    
+    @objc private func updateDelegate() {
+        
+        if signalsQueue.count > 0 {
+            delegate?.playSignal(forMorseEncodedSignal: signalsQueue.removeFirst())
+            guard signalsQueue.first != nil else {
+                delegate?.playerFinished()
+                return
+            }
+            startTimer(forSignal: signalsQueue.first!)
+        }
+    }
+    
+}

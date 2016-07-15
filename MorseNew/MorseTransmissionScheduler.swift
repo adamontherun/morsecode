@@ -8,6 +8,8 @@
 
 import Foundation
 
+ ///  Adds timing information to a Morse encoded message that allows for transmission
+
 class MorseTransmissionScheduler {
     
     static func scheduleTransmission(fromMessage message: Message) -> [Signal] {
@@ -30,12 +32,12 @@ class MorseTransmissionScheduler {
             signals.removeLast()
             signals.append(Signal.Off(InterWordPauseDuration))
         }
-        
         signals.removeLast()
         return signals
     }
     
     private static func createOnSignal(fromMark mark: Mark) -> Signal {
+        
         switch mark {
         case .Dot:
             return Signal.On(DotValue)

@@ -31,7 +31,7 @@ enum Signal {
     }
 }
 
-// this exists to allow for unit testing the equivlance of two Signals.
+// conforms to equatable to allow for unit testing.
 extension Signal: Equatable {
     
 }

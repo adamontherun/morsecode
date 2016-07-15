@@ -11,6 +11,7 @@ import Foundation
 class MessageEncoder {
     
     static func encode(message message: String) -> Message? {
+        
         let words = message.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         
         var morseEncodedWords = [Word]()

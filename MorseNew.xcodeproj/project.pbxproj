@@ -38,6 +38,8 @@
 		66A1565A1D381E66000956F2 /* MessageEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156591D381E66000956F2 /* MessageEncoderTests.swift */; };
 		66A1565C1D382285000956F2 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1565B1D382285000956F2 /* Signal.swift */; };
 		66A1565D1D382285000956F2 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1565B1D382285000956F2 /* Signal.swift */; };
+		66F7DF9B1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */; };
+		66F7DF9D1D386E16004B36E5 /* SignalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		66A156571D381E44000956F2 /* WordEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEncoderTests.swift; sourceTree = "<group>"; };
 		66A156591D381E66000956F2 /* MessageEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEncoderTests.swift; sourceTree = "<group>"; };
 		66A1565B1D382285000956F2 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseCodePlayerDelegateProtocol.swift; sourceTree = "<group>"; };
+		66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignalPlayer.swift; path = ../SignalPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,23 +120,14 @@
 		660C660D1D35BEC100BAD5EE /* MorseNew */ = {
 			isa = PBXGroup;
 			children = (
-				660C660E1D35BEC100BAD5EE /* AppDelegate.swift */,
-				660C66101D35BEC100BAD5EE /* ViewController.swift */,
-				660C66121D35BEC100BAD5EE /* Main.storyboard */,
-				660C66151D35BEC100BAD5EE /* Assets.xcassets */,
-				660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */,
-				660C661A1D35BEC100BAD5EE /* Info.plist */,
-				660C66341D35C01900BAD5EE /* morse.json */,
-				660C663A1D35C71200BAD5EE /* WordEncoder.swift */,
-				660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */,
-				660C66371D35C02900BAD5EE /* DataLoader.swift */,
-				660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */,
-				66A156441D36F04C000956F2 /* Mark.swift */,
-				66A1565B1D382285000956F2 /* Signal.swift */,
-				66A156471D36F053000956F2 /* Symbol.swift */,
-				66A1564A1D36F058000956F2 /* Word.swift */,
-				66A1564D1D36F05F000956F2 /* Message.swift */,
+				66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */,
+				66F7DF981D386D0F004B36E5 /* Data */,
 				66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */,
+				66F7DF971D386C04004B36E5 /* Encoders */,
+				66F7DF961D386BED004B36E5 /* Model */,
+				66F7DF991D386DE8004B36E5 /* Protocols */,
+				66F7DF941D386BD4004B36E5 /* Supporting */,
+				66F7DF951D386BE0004B36E5 /* UI */,
 			);
 			path = MorseNew;
 			sourceTree = "<group>";
@@ -141,12 +136,73 @@
 			isa = PBXGroup;
 			children = (
 				660C66251D35BEC100BAD5EE /* Info.plist */,
+				66A156591D381E66000956F2 /* MessageEncoderTests.swift */,
 				66A156531D36F505000956F2 /* MorseTransmissionSchedulerTests.swift */,
 				66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */,
 				66A156571D381E44000956F2 /* WordEncoderTests.swift */,
-				66A156591D381E66000956F2 /* MessageEncoderTests.swift */,
 			);
 			path = MorseNewTests;
+			sourceTree = "<group>";
+		};
+		66F7DF941D386BD4004B36E5 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				660C66371D35C02900BAD5EE /* DataLoader.swift */,
+				660C660E1D35BEC100BAD5EE /* AppDelegate.swift */,
+				660C66151D35BEC100BAD5EE /* Assets.xcassets */,
+				660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */,
+				660C661A1D35BEC100BAD5EE /* Info.plist */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		66F7DF951D386BE0004B36E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				660C66101D35BEC100BAD5EE /* ViewController.swift */,
+				660C66121D35BEC100BAD5EE /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		66F7DF961D386BED004B36E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66A156441D36F04C000956F2 /* Mark.swift */,
+				66A1564D1D36F05F000956F2 /* Message.swift */,
+				660C66341D35C01900BAD5EE /* morse.json */,
+				66A1565B1D382285000956F2 /* Signal.swift */,
+				66A156471D36F053000956F2 /* Symbol.swift */,
+				66A1564A1D36F058000956F2 /* Word.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		66F7DF971D386C04004B36E5 /* Encoders */ = {
+			isa = PBXGroup;
+			children = (
+				660C663D1D35CB7500BAD5EE /* MessageEncoder.swift */,
+				660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */,
+				660C663A1D35C71200BAD5EE /* WordEncoder.swift */,
+			);
+			name = Encoders;
+			sourceTree = "<group>";
+		};
+		66F7DF981D386D0F004B36E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		66F7DF991D386DE8004B36E5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */,
+			);
+			name = Protocols;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,10 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A156451D36F04C000956F2 /* Mark.swift in Sources */,
+				66F7DF9B1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */,
 				66A1565C1D382285000956F2 /* Signal.swift in Sources */,
 				66A156511D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */,
 				660C66381D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
+				66F7DF9D1D386E16004B36E5 /* SignalPlayer.swift in Sources */,
 				660C66111D35BEC100BAD5EE /* ViewController.swift in Sources */,
 				66A156481D36F053000956F2 /* Symbol.swift in Sources */,
 				66A1564E1D36F05F000956F2 /* Message.swift in Sources */,

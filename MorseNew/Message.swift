@@ -9,6 +9,7 @@
 import Foundation
 
 struct Message: Equatable {
+    
     let words: [Word]
 }
 

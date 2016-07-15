@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, MorseCodePlayerDelegateProtocol {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        guard   let encodedMessage = MessageEncoder.encode(message: "test") else { return }
+        let signals = MorseTransmissionScheduler.scheduleTransmission(fromMessage: encodedMessage)
+        let player = SignalPlayer(signals: signals, delegate: self)
+        player.play()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Morse Code Player Delegate Methods
+    
+    func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {
+        print(morseEncodedSignal)
     }
-
-
+    
+    func playerFinished() {
+        print("done")
+    }
+    
 }
 
