@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Message Entry View Controller-->
@@ -26,15 +27,9 @@
                                 <rect key="frame" x="543" y="550" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="handlePlayButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdD-Gb-PD6"/>
+                                    <segue destination="pd3-J8-NaI" kind="presentation" identifier="segueToFlashingLightViewController" modalPresentationStyle="formSheet" id="Q7P-QM-NNW"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iO-RZ-emb">
-                                <rect key="frame" x="20" y="20" width="560" height="257"/>
-                                <connections>
-                                    <segue destination="pd3-J8-NaI" kind="embed" identifier="segueToFlashingLightViewController" id="acj-3X-LU7"/>
-                                </connections>
-                            </containerView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6p-rb-m3E">
                                 <rect key="frame" x="276" y="298" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.56862745100000001" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,15 +62,34 @@
             <objects>
                 <viewController storyboardIdentifier="flashingLightViewControllerID" id="pd3-J8-NaI" customClass="FlashingLightViewController" customModule="MorseNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oo7-MY-u1C">
-                        <rect key="frame" x="0.0" y="0.0" width="560" height="257"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idp-5s-9BG">
-                                <rect key="frame" x="230" y="79" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idp-5s-9BG">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="h41-rb-maO"/>
+                                    <constraint firstAttribute="width" constant="100" id="kxh-LI-hYt"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-vS-Ny9">
+                                <rect key="frame" x="542" y="8" width="30" height="30"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleCloseButtonTapped:" destination="pd3-J8-NaI" eventType="touchUpInside" id="vAe-X9-mEr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.52685917689999995" blue="0.4908280263" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cHU-vS-Ny9" firstAttribute="top" secondItem="oo7-MY-u1C" secondAttribute="topMargin" constant="8" id="8RZ-SN-VVb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cHU-vS-Ny9" secondAttribute="trailing" constant="8" id="HgB-LN-Tmh"/>
+                            <constraint firstItem="idp-5s-9BG" firstAttribute="centerY" secondItem="oo7-MY-u1C" secondAttribute="centerY" id="d2V-sS-chg"/>
+                            <constraint firstItem="idp-5s-9BG" firstAttribute="centerX" secondItem="oo7-MY-u1C" secondAttribute="centerX" id="stu-Gx-PeK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="flasherView" destination="idp-5s-9BG" id="Ob7-nE-0iU"/>
@@ -83,7 +97,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Mp-FG-3qM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="576.5"/>
+            <point key="canvasLocation" x="1919" y="313"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UzJ-k3-xxV">
+            <objects>
+                <viewController id="1Nx-By-5aM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2vu-Sp-wPy"/>
+                        <viewControllerLayoutGuide type="bottom" id="TGV-tD-n67"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kBs-Jw-6YM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bh-xn-TdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="1013"/>
         </scene>
     </scenes>
 </document>

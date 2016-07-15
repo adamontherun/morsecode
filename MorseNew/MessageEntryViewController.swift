@@ -8,42 +8,36 @@
 
 import UIKit
 
-protocol MessageEntryViewControllerDelegateProtocol {
-    func test(signals: [Signal])
-}
-
-class MessageEntryViewController: UIViewController {
+class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDelegateProtocol {
     
     let segueToFlashingLightViewController = "segueToFlashingLightViewController"
-    static let flashingLightViewControllerID      = "flashingLightViewControllerID"
+    let flashingLightViewControllerID      = "flashingLightViewControllerID"
     
-    var entryDelegate:MessageEntryViewControllerDelegateProtocol?
-
+    @IBOutlet weak var textToEncode: UITextField!
+    
     
     // MARK: - View Controller Lifecycle Methods
-
-
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == segueToFlashingLightViewController {
             
             guard let destinationViewController = segue.destinationViewController as? FlashingLightViewController else { return }
-            print("segueing")
-            self.entryDelegate = destinationViewController
-            //destinationViewController.signals = signals
-        
+            destinationViewController.signals = createSignals()
+            destinationViewController.delegate = self
         }
     }
     
-    
-    @IBOutlet weak var textToEncode: UITextField!
-    @IBAction func handlePlayButtonTapped(sender: UIButton) {
-        guard let messageToEncode = textToEncode.text else { return }
-        guard   let encodedMessage = MessageEncoder.encode(message: messageToEncode) else { return }
-        let signals = MorseTransmissionScheduler.scheduleTransmission(fromMessage: encodedMessage)
-
-        entryDelegate?.test(signals)
+    private func createSignals() -> [Signal]? {
+        
+        guard let messageToEncode = textToEncode.text else { return nil }
+        guard   let encodedMessage = MessageEncoder.encode(message: messageToEncode) else { return nil }
+        return MorseTransmissionScheduler.scheduleTransmission(fromMessage: encodedMessage)
     }
     
-}
-
+    func closeModal() {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+  }

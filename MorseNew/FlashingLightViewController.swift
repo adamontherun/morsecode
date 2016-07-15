@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlashingLightViewController: UIViewController, MessageEntryViewControllerDelegateProtocol, MorseCodePlayerDelegateProtocol {
+class FlashingLightViewController: MorsePlayerViewController {
     
     @IBOutlet weak var flasherView: UIView!
     
@@ -20,16 +20,9 @@ class FlashingLightViewController: UIViewController, MessageEntryViewControllerD
         configureFlasherView()
     }
     
-    // MARK: - MessageEntryViewControllerDelegateProtocol Methods
-    
-    func test(signals: [Signal]) {
-        let player = SignalPlayer(signals: signals, delegate: self)
-        player.play()
-    }
-    
     // MARK: - MorseCodePlayerDelegateProtocol Methods
     
-    func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {
+    override func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {
         
         switch morseEncodedSignal {
         case .On:
@@ -39,10 +32,13 @@ class FlashingLightViewController: UIViewController, MessageEntryViewControllerD
         }
     }
     
-    func playerFinished() {
+    override func playerFinished() {
         
-        UIView.animateWithDuration(1.0) {
-            self.flasherView.alpha = 0
+        UIView.animateWithDuration(0.4
+            , animations: {
+                self.flasherView.alpha = 0
+        }) { _ in
+            self.delegate?.closeModal()
         }
     }
     
@@ -53,5 +49,5 @@ class FlashingLightViewController: UIViewController, MessageEntryViewControllerD
         flasherView.layer.cornerRadius = flasherView.frame.size.width / 2;
         flasherView.alpha = 0.0
     }
-    
+
 }

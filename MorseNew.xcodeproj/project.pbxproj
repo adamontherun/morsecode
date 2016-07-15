@@ -41,6 +41,8 @@
 		66F7DF9B1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */; };
 		66F7DF9D1D386E16004B36E5 /* SignalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */; };
 		66F7DFA11D387324004B36E5 /* FlashingLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA01D387324004B36E5 /* FlashingLightViewController.swift */; };
+		66F7DFA31D397763004B36E5 /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA21D397763004B36E5 /* BeepingViewController.swift */; };
+		66F7DFA51D397797004B36E5 /* MorsePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseCodePlayerDelegateProtocol.swift; sourceTree = "<group>"; };
 		66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignalPlayer.swift; path = ../SignalPlayer.swift; sourceTree = "<group>"; };
 		66F7DFA01D387324004B36E5 /* FlashingLightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashingLightViewController.swift; sourceTree = "<group>"; };
+		66F7DFA21D397763004B36E5 /* BeepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeepingViewController.swift; sourceTree = "<group>"; };
+		66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorsePlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 				660C66101D35BEC100BAD5EE /* MessageEntryViewController.swift */,
 				660C66121D35BEC100BAD5EE /* Main.storyboard */,
 				66F7DFA01D387324004B36E5 /* FlashingLightViewController.swift */,
+				66F7DFA21D397763004B36E5 /* BeepingViewController.swift */,
+				66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -320,12 +326,14 @@
 				66F7DFA11D387324004B36E5 /* FlashingLightViewController.swift in Sources */,
 				66F7DF9D1D386E16004B36E5 /* SignalPlayer.swift in Sources */,
 				660C66111D35BEC100BAD5EE /* MessageEntryViewController.swift in Sources */,
+				66F7DFA51D397797004B36E5 /* MorsePlayerViewController.swift in Sources */,
 				66A156481D36F053000956F2 /* Symbol.swift in Sources */,
 				66A1564E1D36F05F000956F2 /* Message.swift in Sources */,
 				660C663B1D35C71200BAD5EE /* WordEncoder.swift in Sources */,
 				66A1564B1D36F058000956F2 /* Word.swift in Sources */,
 				660C660F1D35BEC100BAD5EE /* AppDelegate.swift in Sources */,
 				660C663E1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */,
+				66F7DFA31D397763004B36E5 /* BeepingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
