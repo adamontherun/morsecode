@@ -10,19 +10,28 @@ import Foundation
 
 class MorseTransmissionScheduler {
     
-    static func scheduleTransmission(fromMessage message: Message) -> [Signal]? {
+    static func scheduleTransmission(fromMessage message: Message) -> [Signal] {
         
         var signals = [Signal]()
         
         for word in message.words {
+            
             for symbol in word.symbols {
+                
                 for mark in symbol.marks {
+                    
                     let signal = createOnSignal(fromMark: mark)
                     signals.append(signal)
+                    signals.append(Signal.Off(InterSignalPauseDuration))
                 }
+                signals.removeLast()
+                signals.append(Signal.Off(InterCharachterPauseDuration))
             }
+            signals.removeLast()
+            signals.append(Signal.Off(InterWordPauseDuration))
         }
         
+        signals.removeLast()
         return signals
     }
     
