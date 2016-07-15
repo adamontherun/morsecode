@@ -1,0 +1,57 @@
+//
+//  FlashingLightViewController.swift
+//  MorseNew
+//
+//  Created by adam smith on 7/14/16.
+//  Copyright © 2016 adamontherun. All rights reserved.
+//
+
+import UIKit
+
+class FlashingLightViewController: UIViewController, MessageEntryViewControllerDelegateProtocol, MorseCodePlayerDelegateProtocol {
+    
+    @IBOutlet weak var flasherView: UIView!
+    
+    // MARK: - View Controller Lifecycle Methods
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        configureFlasherView()
+    }
+    
+    // MARK: - MessageEntryViewControllerDelegateProtocol Methods
+    
+    func test(signals: [Signal]) {
+        let player = SignalPlayer(signals: signals, delegate: self)
+        player.play()
+    }
+    
+    // MARK: - MorseCodePlayerDelegateProtocol Methods
+    
+    func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {
+        
+        switch morseEncodedSignal {
+        case .On:
+            self.flasherView.alpha = 1.0
+        case .Off:
+            self.flasherView.alpha = 0.0
+        }
+    }
+    
+    func playerFinished() {
+        
+        UIView.animateWithDuration(1.0) {
+            self.flasherView.alpha = 0
+        }
+    }
+    
+    // Mark: - View Configuration Methods
+    
+    func configureFlasherView()
+    {
+        flasherView.layer.cornerRadius = flasherView.frame.size.width / 2;
+        flasherView.alpha = 0.0
+    }
+    
+}
