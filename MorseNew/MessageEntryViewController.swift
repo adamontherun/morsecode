@@ -39,5 +39,8 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    @IBAction func handleTransmitButtonTapped(sender: UIButton) {
+        performSegueWithIdentifier(segueToFlashingLightViewController, sender: sender)
+    }
     
   }

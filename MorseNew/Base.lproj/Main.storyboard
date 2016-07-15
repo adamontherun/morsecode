@@ -27,7 +27,7 @@
                                 <rect key="frame" x="543" y="550" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="pd3-J8-NaI" kind="presentation" identifier="segueToFlashingLightViewController" modalPresentationStyle="formSheet" id="Q7P-QM-NNW"/>
+                                    <action selector="handleTransmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLs-0u-eRp"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6p-rb-m3E">
@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="textToEncode" destination="6NC-Ct-L6R" id="IDl-hz-zwy"/>
+                        <segue destination="pd3-J8-NaI" kind="presentation" identifier="segueToFlashingLightViewController" modalPresentationStyle="formSheet" id="gcz-ps-TVx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
