@@ -13,7 +13,6 @@ class WordEncoderTests: XCTestCase {
     func testEncodeEE_returnsCorrectWord() {
         
         let result = WordEncoder.encode(word: "ee")
-        
         let e = Symbol(marks: [Mark.Dot])
         let actual = Word(symbols: [e,e])
         

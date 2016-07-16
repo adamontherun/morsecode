@@ -12,6 +12,8 @@ import Foundation
 final class SignalPlayer: NSObject {
     
     var signalsQueue: [Signal]
+    
+    /// this is a standard base playback rate. A 'dot' should play for 92 ms.
     var basePlaybackRate = 0.092
     weak var delegate:MorseCodePlayerDelegateProtocol?
     

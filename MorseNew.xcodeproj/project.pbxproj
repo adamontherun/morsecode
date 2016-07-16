@@ -128,9 +128,9 @@
 		660C660D1D35BEC100BAD5EE /* MorseNew */ = {
 			isa = PBXGroup;
 			children = (
+				66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */,
 				66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */,
 				66F7DF981D386D0F004B36E5 /* Data */,
-				66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */,
 				66F7DF971D386C04004B36E5 /* Encoders */,
 				66F7DF961D386BED004B36E5 /* Model */,
 				66F7DF991D386DE8004B36E5 /* Protocols */,
