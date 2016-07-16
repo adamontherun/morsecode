@@ -9,8 +9,7 @@
 import Foundation
 
  ///  Adds timing information to a Morse encoded message that allows for transmission
-
-class MorseTransmissionScheduler {
+final class MorseTransmissionScheduler {
     
     static func scheduleTransmission(fromMessage message: Message) -> [Signal] {
         

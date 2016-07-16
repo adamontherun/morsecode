@@ -12,7 +12,9 @@ class FlashingViewController: MorsePlayerViewController {
     
     @IBOutlet weak var flasherView: UIView!
     
+    
     // MARK: - View Controller Lifecycle Methods
+    
     
     override func viewDidLoad() {
         
@@ -20,7 +22,9 @@ class FlashingViewController: MorsePlayerViewController {
         configureFlasherView()
     }
     
+    
     // MARK: - MorseCodePlayerDelegateProtocol Methods
+    
     
     override func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {
         

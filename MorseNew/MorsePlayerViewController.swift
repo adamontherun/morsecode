@@ -12,10 +12,12 @@ protocol MorsePlayerViewControllerDelegateProtocol {
     func closeModal()
 }
 
+ /// Base class for a view controller that can play a Morse Signal
+
 class MorsePlayerViewController: UIViewController, MorseCodePlayerDelegateProtocol
 {
-    var delegate: MorsePlayerViewControllerDelegateProtocol?
     
+    var delegate: MorsePlayerViewControllerDelegateProtocol?
     var signals: [Signal]?
     
     override  func endAppearanceTransition() {
@@ -26,6 +28,7 @@ class MorsePlayerViewController: UIViewController, MorseCodePlayerDelegateProtoc
         }
     }
     
+    /// Methods to be overridden in sub-classes
     func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {}
     func playerFinished(){}
     

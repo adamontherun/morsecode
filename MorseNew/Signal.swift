@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Scalar values that modify a base timing parameter which determines the length of a morse encoded signal
 let DotValue = 1
 let DashValue = 3
 
@@ -15,6 +16,7 @@ let InterSignalPauseDuration = 1
 let InterCharachterPauseDuration = 3
 let InterWordPauseDuration = 7
 
+/// Represents the on/off status of a morse encoded signal and the duration for which the signal should be transmitted
 enum Signal {
     
     typealias DurationMultiplier = Int

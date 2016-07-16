@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Represents the dot or dash in Morse Code
+
 enum Mark {
     
     case Dot

@@ -21,6 +21,7 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     
     // MARK: - View Controller Lifecycle Methods
     
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == SegueIdentifier.segueToFlashingLightViewController.rawValue ||

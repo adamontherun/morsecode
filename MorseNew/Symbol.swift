@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Represents a charachter comprised of Marks
+
 struct Symbol: Equatable {
     
     let marks: [Mark]

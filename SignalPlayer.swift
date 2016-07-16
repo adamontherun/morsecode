@@ -8,8 +8,8 @@
 
 import Foundation
 
-
-class SignalPlayer: NSObject {
+/// Transmits a queue of Signals and plays them for the appropriate length of time
+final class SignalPlayer: NSObject {
     
     var signalsQueue: [Signal]
     var basePlaybackRate = 0.092
