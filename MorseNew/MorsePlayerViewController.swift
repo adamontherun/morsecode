@@ -15,18 +15,17 @@ protocol MorsePlayerViewControllerDelegateProtocol {
 class MorsePlayerViewController: UIViewController, MorseCodePlayerDelegateProtocol
 {
     var delegate: MorsePlayerViewControllerDelegateProtocol?
-
+    
     var signals: [Signal]?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    
+    override  func endAppearanceTransition() {
+        
         if let signalsQueue = signals {
             let player = SignalPlayer(signals: signalsQueue, delegate: self)
             player.play()
         }
     }
-
+    
     func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {}
     func playerFinished(){}
     

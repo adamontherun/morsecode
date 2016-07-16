@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlashingLightViewController: MorsePlayerViewController {
+class FlashingViewController: MorsePlayerViewController {
     
     @IBOutlet weak var flasherView: UIView!
     

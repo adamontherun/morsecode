@@ -21,8 +21,8 @@ class BeepingViewController: MorsePlayerViewController {
     
     override func viewDidLoad() {
         
-        prepareAudioPlayer()
         super.viewDidLoad()
+        prepareAudioPlayer()
     }
     
     // MARK: - Audio Methods
@@ -32,7 +32,6 @@ class BeepingViewController: MorsePlayerViewController {
         
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beep", ofType: "mp3")!)
         try! audioPlayer = AVAudioPlayer(contentsOfURL: alertSound)
-        audioPlayer.numberOfLoops = -1
         audioPlayer.prepareToPlay()
     }
     
@@ -48,6 +47,7 @@ class BeepingViewController: MorsePlayerViewController {
             signalImage.alpha = 1.0
         case .Off:
             audioPlayer.pause()
+            audioPlayer.currentTime = 0.0
             signalImage.alpha = 0.7
         }
     }

@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="911" y="481"/>
         </scene>
-        <!--Flashing Light View Controller-->
+        <!--Flashing View Controller-->
         <scene sceneID="UZ3-cS-6fl">
             <objects>
-                <viewController storyboardIdentifier="flashingLightViewControllerID" id="pd3-J8-NaI" customClass="FlashingLightViewController" customModule="MorseNew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flashingLightViewControllerID" id="pd3-J8-NaI" customClass="FlashingViewController" customModule="MorseNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oo7-MY-u1C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
