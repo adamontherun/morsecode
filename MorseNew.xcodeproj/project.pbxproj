@@ -159,11 +159,11 @@
 		66F7DF941D386BD4004B36E5 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				660C660E1D35BEC100BAD5EE /* AppDelegate.swift */,
 				66F7DFA61D39A37E004B36E5 /* beep.mp3 */,
 				660C66371D35C02900BAD5EE /* DataLoader.swift */,
-				660C660E1D35BEC100BAD5EE /* AppDelegate.swift */,
-				660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */,
 				660C661A1D35BEC100BAD5EE /* Info.plist */,
+				660C66171D35BEC100BAD5EE /* LaunchScreen.storyboard */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
@@ -172,10 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				660C66151D35BEC100BAD5EE /* Assets.xcassets */,
-				660C66101D35BEC100BAD5EE /* MessageEntryViewController.swift */,
-				660C66121D35BEC100BAD5EE /* Main.storyboard */,
-				66F7DFA01D387324004B36E5 /* FlashingViewController.swift */,
 				66F7DFA21D397763004B36E5 /* BeepingViewController.swift */,
+				66F7DFA01D387324004B36E5 /* FlashingViewController.swift */,
+				660C66121D35BEC100BAD5EE /* Main.storyboard */,
+				660C66101D35BEC100BAD5EE /* MessageEntryViewController.swift */,
 				66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */,
 				66F7DFAC1D39C018004B36E5 /* Validate and Format */,
 			);
