@@ -11,7 +11,12 @@ import Foundation
 class WordEncoder {
     
     static func encode(word word: String) -> Word? {
-        let symbols = word.characters.map{ SymbolEncoder.encode(character: $0)! }
+        
+        var symbols = [Symbol]()
+        for character in word.characters {
+            guard let symbol = SymbolEncoder.encode(character: character) else { return nil }
+            symbols.append(symbol)
+        }
         return Word(symbols: symbols)
     }
 }

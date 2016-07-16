@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MorseNewTests/MorseNewTests.swift"
-            timestampString = "490138826.14598"
+            filePath = "MorseNewTests/MorseTransmissionSchedulerTests.swift"
+            timestampString = "490236559.590745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "testEncodeESpaceE()"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testMessageIsI_returnsOnDotOffDotShortOnDot()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
