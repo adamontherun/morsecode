@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MorseNew.xcodeproj">
+      location = "self:/Users/adam/Desktop/MorseNew/MorseCode.xcodeproj">
    </FileRef>
 </Workspace>

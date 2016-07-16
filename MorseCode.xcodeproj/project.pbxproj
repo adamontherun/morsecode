@@ -38,14 +38,14 @@
 		66A1565A1D381E66000956F2 /* MessageEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A156591D381E66000956F2 /* MessageEncoderTests.swift */; };
 		66A1565C1D382285000956F2 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1565B1D382285000956F2 /* Signal.swift */; };
 		66A1565D1D382285000956F2 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1565B1D382285000956F2 /* Signal.swift */; };
-		66F7DF9B1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */; };
-		66F7DF9D1D386E16004B36E5 /* SignalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */; };
 		66F7DFA11D387324004B36E5 /* FlashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA01D387324004B36E5 /* FlashingViewController.swift */; };
 		66F7DFA31D397763004B36E5 /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA21D397763004B36E5 /* BeepingViewController.swift */; };
 		66F7DFA51D397797004B36E5 /* MorsePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */; };
 		66F7DFA71D39A37E004B36E5 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66F7DFA61D39A37E004B36E5 /* beep.mp3 */; };
 		66F7DFA91D39BB4A004B36E5 /* MessageCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFA81D39BB4A004B36E5 /* MessageCleaner.swift */; };
 		66F7DFAB1D39BC01004B36E5 /* MessageValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFAA1D39BC01004B36E5 /* MessageValidator.swift */; };
+		66F7DFAE1D39C35E004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFAD1D39C35E004B36E5 /* MorseCodePlayerDelegateProtocol.swift */; };
+		66F7DFB01D39C367004B36E5 /* SignalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7DFAF1D39C367004B36E5 /* SignalPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		660C660B1D35BEC100BAD5EE /* MorseNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		660C660B1D35BEC100BAD5EE /* MorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		660C660E1D35BEC100BAD5EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		660C66101D35BEC100BAD5EE /* MessageEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntryViewController.swift; sourceTree = "<group>"; };
 		660C66131D35BEC100BAD5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		660C66151D35BEC100BAD5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		660C66181D35BEC100BAD5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		660C661A1D35BEC100BAD5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		660C661F1D35BEC100BAD5EE /* MorseNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		660C661F1D35BEC100BAD5EE /* MorseCode.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseCode.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		660C66251D35BEC100BAD5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		660C66311D35BFD100BAD5EE /* SymbolEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolEncoder.swift; sourceTree = "<group>"; };
 		660C66341D35C01900BAD5EE /* morse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morse.json; sourceTree = "<group>"; };
@@ -83,14 +83,14 @@
 		66A156571D381E44000956F2 /* WordEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEncoderTests.swift; sourceTree = "<group>"; };
 		66A156591D381E66000956F2 /* MessageEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEncoderTests.swift; sourceTree = "<group>"; };
 		66A1565B1D382285000956F2 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
-		66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseCodePlayerDelegateProtocol.swift; sourceTree = "<group>"; };
-		66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignalPlayer.swift; path = ../SignalPlayer.swift; sourceTree = "<group>"; };
 		66F7DFA01D387324004B36E5 /* FlashingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashingViewController.swift; sourceTree = "<group>"; };
 		66F7DFA21D397763004B36E5 /* BeepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeepingViewController.swift; sourceTree = "<group>"; };
 		66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorsePlayerViewController.swift; sourceTree = "<group>"; };
 		66F7DFA61D39A37E004B36E5 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		66F7DFA81D39BB4A004B36E5 /* MessageCleaner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCleaner.swift; sourceTree = "<group>"; };
 		66F7DFAA1D39BC01004B36E5 /* MessageValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageValidator.swift; sourceTree = "<group>"; };
+		66F7DFAD1D39C35E004B36E5 /* MorseCodePlayerDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorseCodePlayerDelegateProtocol.swift; path = MorseNew/MorseCodePlayerDelegateProtocol.swift; sourceTree = "<group>"; };
+		66F7DFAF1D39C367004B36E5 /* SignalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 		660C66021D35BEC100BAD5EE = {
 			isa = PBXGroup;
 			children = (
-				660C660D1D35BEC100BAD5EE /* MorseNew */,
-				660C66221D35BEC100BAD5EE /* MorseNewTests */,
+				660C660D1D35BEC100BAD5EE /* MorseCode */,
+				660C66221D35BEC100BAD5EE /* MorseCodeTests */,
 				660C660C1D35BEC100BAD5EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,17 +123,17 @@
 		660C660C1D35BEC100BAD5EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				660C660B1D35BEC100BAD5EE /* MorseNew.app */,
-				660C661F1D35BEC100BAD5EE /* MorseNewTests.xctest */,
+				660C660B1D35BEC100BAD5EE /* MorseCode.app */,
+				660C661F1D35BEC100BAD5EE /* MorseCode.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		660C660D1D35BEC100BAD5EE /* MorseNew */ = {
+		660C660D1D35BEC100BAD5EE /* MorseCode */ = {
 			isa = PBXGroup;
 			children = (
+				66F7DFAF1D39C367004B36E5 /* SignalPlayer.swift */,
 				66A156501D36F4F2000956F2 /* MorseTransmissionScheduler.swift */,
-				66F7DF9C1D386E16004B36E5 /* SignalPlayer.swift */,
 				66F7DF981D386D0F004B36E5 /* Data */,
 				66F7DF971D386C04004B36E5 /* Encoders */,
 				66F7DF961D386BED004B36E5 /* Model */,
@@ -141,10 +141,11 @@
 				66F7DF941D386BD4004B36E5 /* Supporting */,
 				66F7DF951D386BE0004B36E5 /* UI */,
 			);
+			name = MorseCode;
 			path = MorseNew;
 			sourceTree = "<group>";
 		};
-		660C66221D35BEC100BAD5EE /* MorseNewTests */ = {
+		660C66221D35BEC100BAD5EE /* MorseCodeTests */ = {
 			isa = PBXGroup;
 			children = (
 				660C66251D35BEC100BAD5EE /* Info.plist */,
@@ -153,6 +154,7 @@
 				66A156551D381E0B000956F2 /* SymbolEncoderTests.swift */,
 				66A156571D381E44000956F2 /* WordEncoderTests.swift */,
 			);
+			name = MorseCodeTests;
 			path = MorseNewTests;
 			sourceTree = "<group>";
 		};
@@ -216,7 +218,7 @@
 		66F7DF991D386DE8004B36E5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				66F7DF9A1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift */,
+				66F7DFAD1D39C35E004B36E5 /* MorseCodePlayerDelegateProtocol.swift */,
 			);
 			name = Protocols;
 			path = ..;
@@ -234,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		660C660A1D35BEC100BAD5EE /* MorseNew */ = {
+		660C660A1D35BEC100BAD5EE /* MorseCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 660C66281D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseNew" */;
+			buildConfigurationList = 660C66281D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseCode" */;
 			buildPhases = (
 				660C66071D35BEC100BAD5EE /* Sources */,
 				660C66081D35BEC100BAD5EE /* Frameworks */,
@@ -246,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = MorseNew;
+			name = MorseCode;
 			productName = MorseNew;
-			productReference = 660C660B1D35BEC100BAD5EE /* MorseNew.app */;
+			productReference = 660C660B1D35BEC100BAD5EE /* MorseCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		660C661E1D35BEC100BAD5EE /* MorseNewTests */ = {
+		660C661E1D35BEC100BAD5EE /* MorseCodeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 660C662B1D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseNewTests" */;
+			buildConfigurationList = 660C662B1D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseCodeTests" */;
 			buildPhases = (
 				660C661B1D35BEC100BAD5EE /* Sources */,
 				660C661C1D35BEC100BAD5EE /* Frameworks */,
@@ -264,9 +266,9 @@
 			dependencies = (
 				660C66211D35BEC100BAD5EE /* PBXTargetDependency */,
 			);
-			name = MorseNewTests;
+			name = MorseCodeTests;
 			productName = MorseNewTests;
-			productReference = 660C661F1D35BEC100BAD5EE /* MorseNewTests.xctest */;
+			productReference = 660C661F1D35BEC100BAD5EE /* MorseCode.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -288,7 +290,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 660C66061D35BEC100BAD5EE /* Build configuration list for PBXProject "MorseNew" */;
+			buildConfigurationList = 660C66061D35BEC100BAD5EE /* Build configuration list for PBXProject "MorseCode" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -301,8 +303,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				660C660A1D35BEC100BAD5EE /* MorseNew */,
-				660C661E1D35BEC100BAD5EE /* MorseNewTests */,
+				660C660A1D35BEC100BAD5EE /* MorseCode */,
+				660C661E1D35BEC100BAD5EE /* MorseCodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,16 +339,15 @@
 			files = (
 				66A156451D36F04C000956F2 /* Mark.swift in Sources */,
 				66F7DFAB1D39BC01004B36E5 /* MessageValidator.swift in Sources */,
-				66F7DF9B1D386E02004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */,
 				66A1565C1D382285000956F2 /* Signal.swift in Sources */,
 				66A156511D36F4F2000956F2 /* MorseTransmissionScheduler.swift in Sources */,
 				660C66381D35C02900BAD5EE /* DataLoader.swift in Sources */,
 				660C66321D35BFD100BAD5EE /* SymbolEncoder.swift in Sources */,
 				66F7DFA11D387324004B36E5 /* FlashingViewController.swift in Sources */,
-				66F7DF9D1D386E16004B36E5 /* SignalPlayer.swift in Sources */,
 				660C66111D35BEC100BAD5EE /* MessageEntryViewController.swift in Sources */,
 				66F7DFA51D397797004B36E5 /* MorsePlayerViewController.swift in Sources */,
 				66F7DFA91D39BB4A004B36E5 /* MessageCleaner.swift in Sources */,
+				66F7DFB01D39C367004B36E5 /* SignalPlayer.swift in Sources */,
 				66A156481D36F053000956F2 /* Symbol.swift in Sources */,
 				66A1564E1D36F05F000956F2 /* Message.swift in Sources */,
 				660C663B1D35C71200BAD5EE /* WordEncoder.swift in Sources */,
@@ -354,6 +355,7 @@
 				660C660F1D35BEC100BAD5EE /* AppDelegate.swift in Sources */,
 				660C663E1D35CB7500BAD5EE /* MessageEncoder.swift in Sources */,
 				66F7DFA31D397763004B36E5 /* BeepingViewController.swift in Sources */,
+				66F7DFAE1D39C35E004B36E5 /* MorseCodePlayerDelegateProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +385,7 @@
 /* Begin PBXTargetDependency section */
 		660C66211D35BEC100BAD5EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 660C660A1D35BEC100BAD5EE /* MorseNew */;
+			target = 660C660A1D35BEC100BAD5EE /* MorseCode */;
 			targetProxy = 660C66201D35BEC100BAD5EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -500,7 +502,7 @@
 				INFOPLIST_FILE = MorseNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamontherun.MorseNew;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MorseCode;
 			};
 			name = Debug;
 		};
@@ -511,7 +513,7 @@
 				INFOPLIST_FILE = MorseNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamontherun.MorseNew;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MorseCode;
 			};
 			name = Release;
 		};
@@ -522,8 +524,8 @@
 				INFOPLIST_FILE = MorseNewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamontherun.MorseNewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorseNew.app/MorseNew";
+				PRODUCT_NAME = MorseCode;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorseCode.app/MorseCode";
 			};
 			name = Debug;
 		};
@@ -534,15 +536,15 @@
 				INFOPLIST_FILE = MorseNewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamontherun.MorseNewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorseNew.app/MorseNew";
+				PRODUCT_NAME = MorseCode;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorseCode.app/MorseCode";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		660C66061D35BEC100BAD5EE /* Build configuration list for PBXProject "MorseNew" */ = {
+		660C66061D35BEC100BAD5EE /* Build configuration list for PBXProject "MorseCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				660C66261D35BEC100BAD5EE /* Debug */,
@@ -551,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		660C66281D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseNew" */ = {
+		660C66281D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				660C66291D35BEC100BAD5EE /* Debug */,
@@ -560,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		660C662B1D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseNewTests" */ = {
+		660C662B1D35BEC100BAD5EE /* Build configuration list for PBXNativeTarget "MorseCodeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				660C662C1D35BEC100BAD5EE /* Debug */,

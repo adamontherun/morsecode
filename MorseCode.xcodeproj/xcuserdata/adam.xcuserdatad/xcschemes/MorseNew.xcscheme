@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "660C660A1D35BEC100BAD5EE"
-               BuildableName = "MorseNew.app"
-               BlueprintName = "MorseNew"
-               ReferencedContainer = "container:MorseNew.xcodeproj">
+               BuildableName = "MorseCode.app"
+               BlueprintName = "MorseCode"
+               ReferencedContainer = "container:MorseCode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "660C661E1D35BEC100BAD5EE"
-               BuildableName = "MorseNewTests.xctest"
-               BlueprintName = "MorseNewTests"
-               ReferencedContainer = "container:MorseNew.xcodeproj">
+               BuildableName = "MorseCode.xctest"
+               BlueprintName = "MorseCodeTests"
+               ReferencedContainer = "container:MorseCode.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "660C660A1D35BEC100BAD5EE"
-            BuildableName = "MorseNew.app"
-            BlueprintName = "MorseNew"
-            ReferencedContainer = "container:MorseNew.xcodeproj">
+            BuildableName = "MorseCode.app"
+            BlueprintName = "MorseCode"
+            ReferencedContainer = "container:MorseCode.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "660C660A1D35BEC100BAD5EE"
-            BuildableName = "MorseNew.app"
-            BlueprintName = "MorseNew"
-            ReferencedContainer = "container:MorseNew.xcodeproj">
+            BuildableName = "MorseCode.app"
+            BlueprintName = "MorseCode"
+            ReferencedContainer = "container:MorseCode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "660C660A1D35BEC100BAD5EE"
-            BuildableName = "MorseNew.app"
-            BlueprintName = "MorseNew"
-            ReferencedContainer = "container:MorseNew.xcodeproj">
+            BuildableName = "MorseCode.app"
+            BlueprintName = "MorseCode"
+            ReferencedContainer = "container:MorseCode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
