@@ -19,15 +19,16 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     @IBOutlet weak var soundOrLightSwitch: UISwitch!
     @IBOutlet weak var errorLabel: UILabel!
     
+    
     // MARK: - View Controller Lifecycle Methods
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        hideErrorLabel()
-        errorLabel.text = "Your message couldn't be encoded 😂"
+        configureErrorLabel()
     }
+    
     
     // MARK: - Navigation Methods
     
@@ -37,7 +38,6 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
         if segue.identifier == SegueIdentifier.segueToFlashingLightViewController.rawValue ||
             segue.identifier == SegueIdentifier.segueToBeepingViewController.rawValue
         {
-            
             guard let destinationViewController = segue.destinationViewController as? MorsePlayerViewController else { return }
             destinationViewController.signals = createSignals()
             destinationViewController.delegate = self
@@ -78,7 +78,7 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     }
     
     
-    // MARK: - Helper Methods
+    // MARK: - Error label Methods
     
     private func showErrorLabel() {
         errorLabel.hidden = false
@@ -88,6 +88,15 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
         errorLabel.hidden = true
     }
     
+    private func configureErrorLabel()
+    {
+        hideErrorLabel()
+        errorLabel.text = "Your message couldn't be encoded 😂"
+    }
+    
+
+    // MARK: - Helper Methods
+
     
     private func determineSegueIdentifier() -> String {
         
