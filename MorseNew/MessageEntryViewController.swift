@@ -19,7 +19,7 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     @IBOutlet weak var soundOrLightSwitch: UISwitch!
     
     
-    // MARK: - View Controller Lifecycle Methods
+    // MARK: - Navigation Methods
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -40,9 +40,16 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     
     @IBAction func handleTransmitButtonTapped(sender: UIButton) {
         
-        let segueIdentifier = determineSegueIdentifier()
-        
-        performSegueWithIdentifier(segueIdentifier, sender: sender)
+        if let message = textToEncode.text {
+            let cleanedMessage = MessageCleaner.clean(message: message)
+            
+            if MessageValidator.validate(message: cleanedMessage) {
+                textToEncode.text = cleanedMessage
+                let segueIdentifier = determineSegueIdentifier()
+                
+                performSegueWithIdentifier(segueIdentifier, sender: sender)
+            }
+        }
     }
     
     
