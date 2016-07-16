@@ -177,8 +177,7 @@
 				66F7DFA01D387324004B36E5 /* FlashingViewController.swift */,
 				66F7DFA21D397763004B36E5 /* BeepingViewController.swift */,
 				66F7DFA41D397797004B36E5 /* MorsePlayerViewController.swift */,
-				66F7DFA81D39BB4A004B36E5 /* MessageCleaner.swift */,
-				66F7DFAA1D39BC01004B36E5 /* MessageValidator.swift */,
+				66F7DFAC1D39C018004B36E5 /* Validate and Format */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -221,6 +220,15 @@
 			);
 			name = Protocols;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		66F7DFAC1D39C018004B36E5 /* Validate and Format */ = {
+			isa = PBXGroup;
+			children = (
+				66F7DFA81D39BB4A004B36E5 /* MessageCleaner.swift */,
+				66F7DFAA1D39BC01004B36E5 /* MessageValidator.swift */,
+			);
+			name = "Validate and Format";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

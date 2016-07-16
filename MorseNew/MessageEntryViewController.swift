@@ -17,7 +17,17 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     
     @IBOutlet weak var textToEncode: UITextField!
     @IBOutlet weak var soundOrLightSwitch: UISwitch!
+    @IBOutlet weak var errorLabel: UILabel!
     
+    // MARK: - View Controller Lifecycle Methods
+    
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        hideErrorLabel()
+        errorLabel.text = "Your message couldn't be encoded 😂"
+    }
     
     // MARK: - Navigation Methods
     
@@ -25,7 +35,7 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == SegueIdentifier.segueToFlashingLightViewController.rawValue ||
-        segue.identifier == SegueIdentifier.segueToBeepingViewController.rawValue
+            segue.identifier == SegueIdentifier.segueToBeepingViewController.rawValue
         {
             
             guard let destinationViewController = segue.destinationViewController as? MorsePlayerViewController else { return }
@@ -40,15 +50,21 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     
     @IBAction func handleTransmitButtonTapped(sender: UIButton) {
         
-        if let message = textToEncode.text {
-            let cleanedMessage = MessageCleaner.clean(message: message)
+        guard let message = textToEncode.text else {
+            showErrorLabel()
+            return
+        }
+        
+        let cleanedMessage = MessageCleaner.clean(message: message)
+        
+        if MessageValidator.validate(message: cleanedMessage) {
+            textToEncode.text = cleanedMessage
+            let segueIdentifier = determineSegueIdentifier()
             
-            if MessageValidator.validate(message: cleanedMessage) {
-                textToEncode.text = cleanedMessage
-                let segueIdentifier = determineSegueIdentifier()
-                
-                performSegueWithIdentifier(segueIdentifier, sender: sender)
-            }
+            performSegueWithIdentifier(segueIdentifier, sender: sender)
+            hideErrorLabel()
+        } else {
+            showErrorLabel()
         }
     }
     
@@ -63,7 +79,15 @@ class MessageEntryViewController: UIViewController, MorsePlayerViewControllerDel
     
     
     // MARK: - Helper Methods
-
+    
+    private func showErrorLabel() {
+        errorLabel.hidden = false
+    }
+    
+    private func hideErrorLabel() {
+        errorLabel.hidden = true
+    }
+    
     
     private func determineSegueIdentifier() -> String {
         
